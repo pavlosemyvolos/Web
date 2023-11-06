@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+        <title>
+                Форма
+        </title>
+</head>
+
+<body>
+    <h1>Семиволос П.Р. АнД-31</h1>
+    <h2>Варіант №5</h2>
+    <a href="index.html">На головну</a>
+    <h3>Завдання</h3>
+    <p>Необхідно розробити для введення інформаціїї про фільм до БД фільмів</p>
+    <ul>
+        <li>дані про фільм, включають назву фільму, жанр(вибирається зі списку), дату виходу на екрани, опис фільму, картинку з афішею</li>
+        <li>дані про режисера, включають ПІБ, дату народження, біографію, посилання на веб-сайт</li>
+    </ul>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Фільм</legend>
+            <label> Назва фільму
+                <input id = "film_name" type="text">
+            </label>
+            <label> Жанр
+                <select>
+                    <option>Бойовик</option>
+                    <option>Комедія</option>
+                    <option>Драма</option>
+                    <option>Історичний</option>
+                    <option>Детектив</option>
+                    <option>Фентезі</option>
+                    <option>Мюзікл</option>
+                </select>
+            </label>
+            <label> Дата виходу на екрани
+                <input id = "film_date" type="date">
+            </label>
+            <label> Опис фільму
+                <input id = "film_desc" type="text">
+            </label>
+            <label>Картинка з афішею фільму
+                <input type="file" id="film_img" name="film_img">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Режисер</legend>
+            <label> ПІБ
+                <input id = "author_name" type="text">
+            </label>
+            <label> Дата народження
+                <input id = "author_date" type="date">
+            </label>
+            <label> Біографія
+                <input id = "author_name" type="text">
+            </label>
+            <label>веб-сайт
+                <input type="url" id="author_web" name="author_web">
+            </label>
+        </fieldset>
+        <button type="submit">Надіслати</button>
+    </form>    
+</body>
